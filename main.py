@@ -28,7 +28,7 @@ app = FastAPI()
 
 # Load Keras model (adjust your path)
 try:
-    keras_model = tf.keras.models.load_model("models/liver_model.h5")
+    keras_model = tf.keras.models.load_model("liver_model.h5")
     print("TensorFlow model loaded successfully.")
     print("Model input shape:", keras_model.input_shape)
 except Exception as e:
